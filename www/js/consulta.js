@@ -11,7 +11,7 @@ var app = {
 
     listar: function(){
         var db = firebase.firestore();
-        var ag = db.collection("cadastro");
+        var ag = db.collection("agendamentos");
 
         ag.get()
         .then((querySnapshot) => {
